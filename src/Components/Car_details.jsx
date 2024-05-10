@@ -18,7 +18,7 @@ import Recent_news from "./Recent_news"
 function Car_details() {
     return (
         <>
-            <div className='mx-auto max-w-[1320px] p-5 md:pt-24'>
+            <div className='mx-auto max-w-[1355px] p-5 mt-[2em] sm:pt-10'>
                 <section className='details mt-24 '>
                     <div className="banner">
                         <img src={container} alt="img" />
@@ -73,8 +73,8 @@ function Car_details() {
                         <Comments />
 
                     </div>
-                    <div className="search_subs mt-10 md:col-span-4 md:mt-0">
-                        <div className='grid grid-row-4 gap-10'>
+                    <div className="search_subs mt-10 mr-5 md:col-span-4 md:mt-0 md:mr-0">
+                        <div className='grid grid-row-4 gap-5 md:gap-10'>
                             <div className="search w-full md:h-[120px] border border-slate-200 rounded-lg p-5 pb-10">
                                 <p className='text-purple text-xl font-medium mb-2 md:text-l'>Search</p>
                                 <form action="#">

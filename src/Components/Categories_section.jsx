@@ -3,6 +3,9 @@ import data from "../js/mockData.js"
 import left_arrow from "../assets/left_arrow.png";
 import right_arrow from "../assets/right_arrow.png";
 import { Link } from "react-router-dom"
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from 'react'
 
 function Categories_section() {
 
@@ -15,10 +18,15 @@ function Categories_section() {
         slider.scrollLeft = slider.scrollLeft + 500
     }
 
+
+    useEffect(() => {
+        AOS.init()
+    }, [])
+
     return (
         <>
             <div className='mx-[20px]'>
-                <section className='categories mt-24 mx-auto max-w-[1320px] '>
+                <section className='categories mt-20 mx-auto max-w-[1320px]' data-aos="fade-left" data-aos-anchor-placement="top-center">
                     <div className="container">
                         <div className="title">
                             <p className='text-purple text-xl font-medium mb-2 md:text-3xl'>Categories</p>
@@ -34,11 +42,11 @@ function Categories_section() {
                                     return (
                                         <>
                                             <Link to="/Autotalk/products">
-                                                <div className='mr-5 items-center min-w-[210px] h-[190px] rounded-2xl p-5 border border-zinc-200 bg-zinc-100 md:bg-white'>
-                                                    <img className='cat_img m-[0_0_20px_0]' src={item.img} alt="" />
+                                                <div className='mr-5 items-center min-w-[134.4px] h-[121.6px] md:w-[210px] md:h-[190px] rounded-2xl p-5 border border-zinc-200 bg-zinc-100 md:bg-white'>
+                                                    <img className='cat_img' src={item.img} alt="" />
 
-                                                    <div className="flex items-center justify-center leading-snug text-lg">
-                                                        <p className=' text-slate-500'>{item.title}</p>
+                                                    <div className="flex items-center justify-center leading-snug mt-[10px] md:my-[20px]">
+                                                        <p className=' text-slate-500 text-[11.52px] md:text-[18px]'>{item.title}</p>
                                                     </div>
                                                 </div>
                                             </Link>

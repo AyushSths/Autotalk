@@ -4,14 +4,22 @@ import image_59 from '../assets/image 59.png'
 import image_54 from '../assets/image 54.png'
 import user from '../assets/user.png'
 import { Link } from "react-router-dom";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from 'react'
 
 function Lower_section() {
+
+    useEffect(() => {
+        AOS.init()
+    }, [])
+
     return (
         <>
-            <div className="lower-section mt-5 md:mt-10 ">
-                <div className="flex flex-wrap justify-center gap-4">
+            <div className="lower-section mt-5 md:mt-10 " data-aos="fade-right" data-aos-anchor-placement="top-center">
+                <div className="flex flex-wrap justify-center gap-y-10 md:gap-x-4 ">
                     <Link to="/Autotalk/4-Wheeler">
-                        <div className="mt-10 rounded-xl sm:mt-0 md:w-[427px] h-[329px]">
+                        <div className="rounded-xl sm:mt-0 md:w-[427px]">
                             <div className="md:shrink-0">
                                 <img className="h-full w-full object-contain md:h-full  md:w-full" src={image_52} alt="" />
                             </div>
@@ -26,7 +34,7 @@ function Lower_section() {
                         </div>
                     </Link>
 
-                    <div className="mt-10  rounded-xl sm:mt-24 md:w-[427px] h-[329px] md:mt-0">
+                    <div className="rounded-xl md:w-[427px] md:mt-0">
                         <div className="md:shrink-0">
                             <img className="h-full w-full object-contain md:h-full  md:w-full" src={image_59} alt="" />
                         </div>
@@ -39,7 +47,7 @@ function Lower_section() {
                             </div>
                         </div>
                     </div>
-                    <div className="mt-10 hidden md:block rounded-xl sm:mt-24 md:w-[427px] h-[329px] md:mt-0">
+                    <div className="mt-10 hidden md:block rounded-xl md:w-[427px] md:mt-0">
                         <div className="md:shrink-0">
                             <img className="h-full w-full object-contain md:h-full  md:w-full" src={image_54} alt="" />
                         </div>

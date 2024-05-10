@@ -4,13 +4,21 @@ import image_83 from '../assets/image 83.png'
 import user from '../assets/user.png'
 import Lower_section from "./Lower_section"
 import { Link } from "react-router-dom";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from 'react'
 
 function Most_read_section() {
+
+    useEffect(() => {
+        AOS.init()
+    }, [])
+
     return (
         <>
-            <div className='mx-[20px]'>
+            <div className='mx-[20px]' data-aos="fade-right" data-aos-anchor-placement="top-center">
                 <Link to="/Autotalk/4-Wheeler">
-                    <section className="most-read mt-24 mx-auto max-w-[1320px]">
+                    <section className="most-read mt-16 mx-auto max-w-[1320px]">
                         <div className="container">
                             <div className="title">
                                 <p className='text-purple text-xl font-medium mb-2 md:text-3xl'>Most Read</p>
@@ -32,7 +40,7 @@ function Most_read_section() {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="hidden lg:block">
+                                <div className="hidden xl:block">
                                     <div className="md:shrink-0">
                                         <img className="h-full w-full object-contain md:h-full  md:w-full" src={image_83} alt="" />
                                     </div>
