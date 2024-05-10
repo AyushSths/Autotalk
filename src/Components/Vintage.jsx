@@ -22,7 +22,7 @@ const Vintage = () => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
   return (
-    <main className="min-h-[600px]  px-4 " data-aos="fade-right">
+    <main className="min-h-[600px] mt-10 px-4 " data-aos="fade-right">
       <header className="flex justify-between max-w-[1320px] mx-auto  pt-10 border-b border-gray">
         <div>
           <h2 className="sm:text-[24px] text-[20px] font-semibold text-purple tracking-wide">Vintage Collection</h2>

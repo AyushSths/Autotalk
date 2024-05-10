@@ -17,7 +17,7 @@ import Car_details from '../Components/Car_details'
 const Home = () => {
   return (
     <main>
-      <Herosection />
+      {/* <Herosection /> */}
       <Most_read_section />
       <Categories_section />
       <TechInnovation />

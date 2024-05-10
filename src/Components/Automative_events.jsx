@@ -8,24 +8,27 @@ import { FaTwitter } from "react-icons/fa";
 const Automative_events = () => {
     const onlyfour = innovation.slice(0, 4);
     return (
-        <main className="min-h-[750px] bg-lightgreen px-2 py-20 text-gray my-4">
+        <main className="min-h-[750px] bg-lightgreen px-2 py-20 text-gray my-4 mt-20">
             <div className="flex flex-wrap gap-8 justify-center ">
                 <div>
-                    <h2 className="text-[24px] text-purple font-semibold pb-4 mb-6">See what happening new in Auto</h2>
-                    <section className="flex flex-wrap  gap-y-6 justify-center  max-w-[950px]">
+                    <div>
+                        <p className="text-[24px] text-purple font-semibold">Automotive Events</p>
+                        <p className="text-slate-500 mt-3">See what happening new in auto</p>
+                    </div>
+                    <hr className="my-5" />
+                    <section className="flex flex-wrap  gap-y-6 justify-center mt-10 max-w-[950px]">
                         {onlyfour.map((inovdata, index) => (
                             <TechInnovationCard key={index} inovdata={inovdata} />
                         ))}
                     </section>
                 </div>
-
                 <section className="grid 2xl:grid-cols-1 md:grid-cols-2 grid-cols-1 gap-8">
                     <form
                         action="#"
                         className="grid gap-2 max-w-[361px] h-[330px] bg-white rounded-lg p-4 shadow-lg"
                     >
                         <div className="grid gap-2">
-                            <h2 className="text-[18px]">Automotive Events</h2>
+                            <h2 className="text-[18px]"></h2>
                             <p className="text-[14px] font-normal">Stay up to date with the latest news via email.We hate spam!</p>
                         </div>
                         <div className="grid gap-2 ">

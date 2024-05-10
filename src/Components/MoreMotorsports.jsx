@@ -9,7 +9,7 @@ import "aos/dist/aos.css";
 const MoreMotorsports = () => {
   AOS.init();
   return (
-    <main className="bg-lightgreen min-h-[654px] mt-6 md:py-20 py-6 " data-aos="fade-right">
+    <main className="bg-lightgreen min-h-[654px] mt-20 md:py-20 py-6 " data-aos="fade-right">
       <div className=" max-w-[1320px] xl:mx-auto mx-4 ">
         <h2 className="sm:text-[24px] text-[20px] font-semibold text-purple tracking-wide">
           More in Motorsports & DIY Maintainance Tips

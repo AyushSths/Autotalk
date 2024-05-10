@@ -4,6 +4,7 @@ import { RxHamburgerMenu } from "react-icons/rx";
 import { Link } from "react-router-dom";
 import Menu_categories from "./Menu_categories"
 import auto from "../assets/auto 1.png"
+import Herosection from '../Components/Herosection'
 
 
 const Navbar = ({ setCondition, setopen, open }) => {
@@ -82,6 +83,8 @@ const Navbar = ({ setCondition, setopen, open }) => {
           </div>
         </nav>
       </main>
+      <Herosection isScrolled={isScrolled} isNotHome={isNotHome} />
+
       {/* <Menu_categories open={open} setopen={setopen} /> */}
     </>
   );

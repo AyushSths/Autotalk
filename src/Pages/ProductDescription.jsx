@@ -14,28 +14,28 @@ import Footer from '../Components/Footer'
 
 const ProductDescription = () => {
   return (
-   <main>
-    <div className=''>
+    <main>
+      <div className='p-5'>
         <div>
-        {Tesla.map((tesla,index) => (
-           <div key={index}>
-             <ProductCard  tesla={tesla}/>
-             <Productdetails tesla={tesla}/>
-           </div>
-        ))}
+          {Tesla.map((tesla, index) => (
+            <div key={index}>
+              <ProductCard tesla={tesla} />
+              <Productdetails tesla={tesla} />
+            </div>
+          ))}
         </div>
-        <div className='mt-10 flex flex-wrap justify-center gap-5'>
-          <Emi/>
-          <Banks/>
+        <div className='mt-10 mx-auto max-w-[1320px] flex flex-wrap justify-center gap-5'>
+          <Emi />
+          <Banks />
         </div>
-        <Autoloan/>
-        <UserReviews/>
-        <SimilarProducts/>
-        <News/>
-        <Subscribe/>
-    </div>   
-  
-   </main>
+        <Autoloan />
+        <UserReviews />
+        <SimilarProducts />
+        <News />
+        <Subscribe />
+      </div>
+
+    </main>
   )
 }
 
