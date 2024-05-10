@@ -25,7 +25,7 @@ function Car_details() {
                     </div>
                 </section>
                 <section className='md:grid grid-cols-14 gap-[36px] mt-10'>
-                    <div className="media flex justify-between md:block">
+                    <div className="media flex justify-between md:block md:col-span-1">
                         <ul className='flex space-y-0 space-x-4 md:block md:space-y-4 md:space-x-0'>
                             <li><img src={fb} alt="imm" /></li>
                             <li><img src={insta} alt="img" /></li>
@@ -73,7 +73,7 @@ function Car_details() {
                         <Comments />
 
                     </div>
-                    <div className="search_subs mx-auto mt-10 md:col-span-4 md:mt-0">
+                    <div className="search_subs mt-10 md:col-span-4 md:mt-0">
                         <div className='grid grid-row-4 gap-10'>
                             <div className="search w-full md:h-[120px] border border-slate-200 rounded-lg p-5 pb-10">
                                 <p className='text-purple text-xl font-medium mb-2 md:text-l'>Search</p>
