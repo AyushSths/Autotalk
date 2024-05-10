@@ -73,7 +73,7 @@ function Car_details() {
                         <Comments />
 
                     </div>
-                    <div className="search_subs mt-10 mr-10 md:col-span-4 md:mt-0 md:mr-0">
+                    <div className="search_subs mt-10 min-w-[316px] md:w-full md:col-span-4 md:mt-0 md:mr-0">
                         <div className='grid grid-row-4 gap-5 md:gap-10'>
                             <div className="search w-full md:h-[120px] border border-slate-200 rounded-lg p-5 pb-10">
                                 <p className='text-purple text-xl font-medium mb-2 md:text-l'>Search</p>
