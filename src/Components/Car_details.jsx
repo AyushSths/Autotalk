@@ -21,7 +21,7 @@ function Car_details() {
             <div className='mx-auto max-w-[1355px] p-5 mt-[2em] sm:pt-10'>
                 <section className='details mt-24 '>
                     <div className="banner rounded-2xl flex flex-wrap items-stretch">
-                        <div className="content text-white p-10 self-end ">
+                        <div className="content text-white p-5 md:p-10 self-end ">
                             <div className="topic ">
                                 <p className='text-[23px] font-semibold flex md:text-[36px]'>2023 Porsche Panamera launched in India, priced from Rs 1.68 crore</p>
                                 <p className='text-[16px] hidden lg:text-[20px] lg:block'>Porsche has launched the new third-gen Panamera sedan in India, just a day after the global unveil of the new car. The price range for the new Panamera starts at Rs 1.68 crore (ex-showroom).</p>
@@ -84,7 +84,7 @@ function Car_details() {
                         <Comments />
 
                     </div>
-                    <div className="search_subs mt-10 min-w-[316px] md:w-full md:col-span-4 md:mt-0 md:mr-0">
+                    <div className="search_subs mt-10 min-w-[220px] md:w-full md:col-span-4 md:mt-0 md:mr-0">
                         <div className='grid grid-row-4 gap-5 md:gap-10'>
                             <div className="search w-full md:h-[120px] border border-slate-200 rounded-lg p-5 pb-10">
                                 <p className='text-purple text-xl font-medium mb-2 md:text-l'>Search</p>
@@ -95,7 +95,7 @@ function Car_details() {
                                     </div>
                                 </form>
                             </div>
-                            <div className="subs w-full border border-slate-200 rounded-lg p-5">
+                            <div className="subs border border-slate-200 rounded-lg p-5">
                                 <p className='text-purple text-xl font-medium mb-2 md:text-l'>Subscribe to our Newsletter</p>
                                 <p className='text-slate-500'>Stay up to date with the latest news via email. We hate spam!</p>
                                 <div className="email my-5">
@@ -116,7 +116,7 @@ function Car_details() {
                             </div>
                             <div className="disc">
                                 <p className='text-purple text-xl font-medium mb-2 md:text-l'>Discover More</p>
-                                <div className="flex flex-wrap gap-5 my-5 w-[260px]">
+                                <div className="flex flex-wrap gap-5 my-5 min-w-[200px] md:w-[260px]">
                                     <button className='py-[10px] px-[14px] text-zinc-600 rounded-lg border border-zinc-300'>4 Wheeler</button>
                                     <button className='py-[10px] px-[14px] text-zinc-600 rounded-lg border border-zinc-300'>Bikes</button>
                                     <button className='py-[10px] px-[14px] text-zinc-600 rounded-lg border border-zinc-300'>Scooters</button>

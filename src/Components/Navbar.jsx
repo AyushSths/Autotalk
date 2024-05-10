@@ -31,8 +31,8 @@ const Navbar = ({ setCondition, setopen, open }) => {
 
   return (
     <>
-      <main className={`fixed w-full  shadow-sm z-50 ${isScrolled ? "mt-[-65px] bg-sky-100" : "mt-[0px] "}  ${isNotHome ? '' : 'bg-sky-100'}`} >
-        <nav className={`flex items-center xl:justify-center justify-between md:gap-6 gap-20 px-4 bg-transparent w-full max-h-[110px] md:py-8 py-6 text-gray text-[14px] font-normal md:border-b border-blue-300 border-b-none ${isScrolled ? "mt-[20px] pt-5" : "mt-[0px]"} ${open ? 'hidden' : 'block'}`}>
+      <main className={`w-full shadow-sm z-50 ${isScrolled ? "fixed mt-[-65px]  bg-sky-100" : "mt-[0px] "}  ${isNotHome ? '' : 'bg-sky-100'}`} >
+        <nav className={`flex items-center xl:justify-center justify-between md:gap-6 gap-20 px-4 bg-transparent max-h-[110px] md:py-8 py-6 text-gray text-[14px] font-normal md:border-b border-blue-300 border-b-none ${isScrolled ? "mt-[20px]  pt-5" : "mt-[0px]"} ${open ? 'hidden' : 'block'}`}>
           <div className="lg:flex hidden gap-8">
             <select
               name="NewAuto"
@@ -52,9 +52,9 @@ const Navbar = ({ setCondition, setopen, open }) => {
             </select>
           </div>
 
-          <figure className="md:mx-24">
+          <figure className="mx-0 md:mx-24">
             <Link to={"/Autotalk/"}>
-              <img src="./auto 1.png" alt="logo" className="sm:w-[300px]" />
+              <img src="./auto 1.png" alt="logo" className="w-[180px] sm:w-[300px]" />
             </Link>
           </figure>
 

@@ -35,7 +35,7 @@ function Menu_categories({ open, setopen }) {
 
     return (
         <>
-            <div className={`menu-category bg-menu_blue w-full md:max-h-[1020px] grid grid-rows-12 justify-center xl:p-[20px_0_20px_0] box-sizing-border ${open ? 'block' : 'hidden'}`} data-aos="fullscreen-overlay">
+            <div className={`menu-category min-w-[375px] bg-menu_blue grid grid-rows-12 justify-center xl:p-[20px_0_20px_0] box-sizing-border ${open ? 'block' : 'hidden'}`}>
                 <div className="header w-full row-span-1 flex justify-between items-center bg-white pr-5 lg:bg-menu_blue lg:px-5">
                     <div className="logo ">
                         <img src={auto} alt="" />

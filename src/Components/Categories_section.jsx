@@ -26,7 +26,7 @@ function Categories_section() {
     return (
         <>
             <div className='mx-[20px]'>
-                <section className='categories mt-20 mx-auto max-w-[1320px]' data-aos="fade-left" data-aos-anchor-placement="top-center">
+                <section className='categories mt-20 mx-auto min-w-[220px]' data-aos="fade-right" data-aos-anchor-placement="top-center">
                     <div className="container">
                         <div className="title">
                             <p className='text-purple text-xl font-medium mb-2 md:text-3xl'>Categories</p>
