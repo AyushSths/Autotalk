@@ -91,10 +91,10 @@ function Car_details() {
                                     <label htmlFor="" className='text-zinc-600 font-medium'>Email</label>
                                     <input type="email" className='rounded-md p-4 bg-zinc-100 w-full h-[49px] mt-[6px]' />
                                 </div>
-                                <div className="chk flex ">
-                                    <label htmlFor="" className=''>
+                                <div className="chk flex items-center">
+                                    <label htmlFor="" className='flex'>
                                         <input type="checkbox" className='mr-[6px] w-6 h-6 bg-zinc-500' />
-                                        <span className='absolute text-zinc-600'>I have read and agree to the terms.</span>
+                                        <span className=' text-zinc-600'>I have read and agree to the terms.</span>
                                     </label>
                                 </div>
                                 <div className="subs_btn mt-5">
