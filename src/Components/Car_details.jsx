@@ -13,15 +13,26 @@ import left_arrow_2 from "../assets/left_arrow_2.png"
 import right_arrow_2 from "../assets/right_arrow_2.png"
 import Comments from "./Comments"
 import Recent_news from "./Recent_news"
-
+import user from '../assets/Group (1).png'
 
 function Car_details() {
     return (
         <>
             <div className='mx-auto max-w-[1355px] p-5 mt-[2em] sm:pt-10'>
                 <section className='details mt-24 '>
-                    <div className="banner">
-                        <img src={container} alt="img" />
+                    <div className="banner rounded-2xl flex flex-wrap items-stretch">
+                        <div className="content text-white p-10 self-end ">
+                            <div className="topic ">
+                                <p className='text-[23px] font-semibold flex md:text-[36px]'>2023 Porsche Panamera launched in India, priced from Rs 1.68 crore</p>
+                                <p className='text-[16px] hidden lg:text-[20px] lg:block'>Porsche has launched the new third-gen Panamera sedan in India, just a day after the global unveil of the new car. The price range for the new Panamera starts at Rs 1.68 crore (ex-showroom).</p>
+                            </div>
+                            <div className="admin flex items-center gap-x-4 mt-5 md:mt-10 text-[12px] md:text-[16px]">
+                                <p className='flex items-center gap-1'><img src={user} alt="" /> Admin</p>
+                                <button className='p-[10px] bg-zinc-100 rounded-xl text-purple'>Corperate</button>
+                                <p>Apr 23, 2023</p>
+                            </div>
+                        </div>
+                        {/* <img src={container} alt="img" /> */}
                     </div>
                 </section>
                 <section className='md:grid grid-cols-14 gap-[36px] mt-10'>

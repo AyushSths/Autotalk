@@ -20,6 +20,10 @@ export default {
         primary: "#A7CDE9",
         lightyellow: "#FFFCEA",
       },
+      backgroundImage: {
+        'container': "url('/src/assets/container.png')",
+
+      },
       keyframes: {
         slideleft: {
           from: {

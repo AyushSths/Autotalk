@@ -28,6 +28,13 @@ p {
   scrollbar-width: none;
 }
 
+.banner {
+  background-image: url("./assets/image 91.png");
+  background-repeat: no-repeat;
+  height: 500px;
+  background-position: center;
+}
+
 .cat_img {
   width: 100%;
   aspect-ratio: 3/2;
