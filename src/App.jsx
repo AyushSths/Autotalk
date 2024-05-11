@@ -17,6 +17,7 @@ import Navbar from "./Components/Navbar"
 const App = () => {
   const [condition, setCondition] = useState(false)
   const [open, setopen] = useState(false)
+  const [isScrolled, setIsScrolled] = useState(false);
 
   return (
     <main >
@@ -24,9 +25,9 @@ const App = () => {
       <div className={`routes ${open ? 'hidden' : 'block'}`}>
         <Header />
         <BrowserRouter>
-          <Navbar setCondition={setCondition} setopen={setopen} open={open} />
+          <Navbar setCondition={setCondition} setopen={setopen} open={open} isScrolled={isScrolled} setIsScrolled={setIsScrolled} />
           <Routes>
-            <Route path="/Autotalk/" element={<Home />}></Route>
+            <Route path="/Autotalk/" element={<Home isScrolled={isScrolled} />}></Route>
             {/* <Route path="/Autotalk/Menu_categories" element={<Menu_categories />}></Route> */}
             <Route path="/Autotalk/Products" element={<Products />}></Route>
             <Route path="/Autotalk/ProductDescription" element={<ProductDescription />}></Route>

@@ -7,8 +7,7 @@ import auto from "../assets/auto 1.png"
 import Herosection from '../Components/Herosection'
 
 
-const Navbar = ({ setCondition, setopen, open }) => {
-  const [isScrolled, setIsScrolled] = useState(false);
+const Navbar = ({ setCondition, setopen, open, isScrolled, setIsScrolled }) => {
   const isNotHome = location.pathname !== '/Autotalk/';
 
   useEffect(() => {
@@ -83,7 +82,7 @@ const Navbar = ({ setCondition, setopen, open }) => {
           </div>
         </nav>
       </main>
-      <Herosection isScrolled={isScrolled} isNotHome={isNotHome} />
+      {/* <Herosection isScrolled={isScrolled} isNotHome={isNotHome} /> */}
 
       {/* <Menu_categories open={open} setopen={setopen} /> */}
     </>

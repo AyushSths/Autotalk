@@ -14,10 +14,10 @@ import Automative_events from '../Components/Automative_events'
 import Recent_news from '../Components/Recent_news'
 import Car_details from '../Components/Car_details'
 
-const Home = () => {
+const Home = ({ isScrolled, setisScrolled }) => {
   return (
     <main>
-      {/* <Herosection /> */}
+      <Herosection isScrolled={isScrolled} />
       <Most_read_section />
       <Categories_section />
       <TechInnovation />

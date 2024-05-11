@@ -18,7 +18,7 @@ import user from '../assets/Group (1).png'
 function Car_details() {
     return (
         <>
-            <div className='mx-auto max-w-[1355px] p-5 mt-[2em] sm:pt-10'>
+            <div className='mx-auto max-w-[1355px] p-5 mt-[3em] sm:pt-10'>
                 <section className='details'>
                     <div className="banner rounded-2xl flex flex-wrap items-stretch">
                         <div className="content text-white p-5 md:p-10 self-end ">
