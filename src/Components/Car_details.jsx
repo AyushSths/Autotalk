@@ -11,11 +11,14 @@ import finsta from "../assets/finsta.png"
 import ftwitter from "../assets/ftwitter.png"
 import left_arrow_2 from "../assets/left_arrow_2.png"
 import right_arrow_2 from "../assets/right_arrow_2.png"
+import image_91 from "../assets/image 91.png"
+import image_92 from "../assets/image 92.png"
 import Comments from "./Comments"
 import Recent_news from "./Recent_news"
 import user from '../assets/Group (1).png'
 
 function Car_details() {
+    const isSmallScreen = window.innerWidth < 768;
     return (
         <>
             <div className='mx-auto max-w-[1355px] p-5 mt-[3em] sm:pt-10'>
