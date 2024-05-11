@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from 'react-router-dom'
 
 const ProductCard = ({ tesla }) => {
 
@@ -50,7 +50,7 @@ const ProductCard = ({ tesla }) => {
       </div>
       <div className="flex flex-wrap justify-center gap-6 my-6">
         <button className="commonButton">Details</button>
-        <button className="commonButton">EMI Calculator</button>
+        <Link to="/Autotalk/Emipage"><button className="commonButton">EMI Calculator</button></Link>
         <button className="commonButton">Auto Loan</button>
         <button className="commonButton">UserReview</button>
         <button className="commonButton">News</button>

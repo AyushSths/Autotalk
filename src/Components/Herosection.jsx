@@ -40,7 +40,7 @@ const Herosection = ({ isScrolled }) => {
   const NextArrow = ({ onClick }) => {
     return (
       <div className="arrow next" onClick={onClick}>
-        <IoIosArrowForward className="h-10 w-10 text-sky-300" />
+        <IoIosArrowForward className="h-5 w-5 md:h-10 md:w-10 text-sky-300" />
       </div>
     );
   };
@@ -48,7 +48,7 @@ const Herosection = ({ isScrolled }) => {
   const PrevArrow = ({ onClick }) => {
     return (
       <div className="arrow prev" onClick={onClick}>
-        <IoIosArrowBack className="h-10 w-10 text-sky-300" />
+        <IoIosArrowBack className="h-5 w-5 md:h-10 md:w-10 text-sky-300" />
       </div>
     );
   };
