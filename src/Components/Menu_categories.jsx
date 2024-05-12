@@ -13,14 +13,17 @@ import right_arrow from "../assets/right_arrow_3.png"
 import black_car from "../assets/black car.png"
 import red_carr from "../assets/red car(2).png"
 import { useEffect } from 'react'
+import { IoIosArrowDown } from "react-icons/io";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
 
 function Menu_categories({ open, setopen }) {
     const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth < 1024);
-    useEffect(() => {
+    const [dropdown, setDropdown] = useState(false)
 
+    useEffect(() => {
+        AOS.init()
         const handleResize = () => {
             setIsSmallScreen(window.innerWidth < 1024);
         };
@@ -35,7 +38,7 @@ function Menu_categories({ open, setopen }) {
 
     return (
         <>
-            <div className={`menu-category min-w-[375px] bg-menu_blue grid grid-rows-12 justify-center xl:p-[20px_0_20px_0] box-sizing-border ${open ? 'block' : 'hidden'}`}>
+            <div className={`menu-category min-w-[375px] md:h-[1020px] bg-menu_blue grid grid-rows-12 justify-center xl:p-[20px_0_20px_0] box-sizing-border ${open ? 'block' : 'hidden'}`}>
                 <div className="header w-full row-span-1 flex justify-between items-center bg-white pr-5 lg:bg-menu_blue lg:px-5">
                     <div className="logo ">
                         <img src={auto} alt="" />
@@ -60,31 +63,25 @@ function Menu_categories({ open, setopen }) {
                     <hr className='my-3 border-blue-300' />
                     <div className="categories_section grid p-5 md:grid-cols-3 justify-between">
                         <div className="first_section">
-                            {/* <div className="dropdown ml-5 flex items-center gap-3">
-                                <img src={group} alt="" />
-                                <select name="" id="" className=' bg-menu_blue text-white focus:border-none'>
-                                    <option value=""> What’s New in Auto</option>
-                                    <option value="">4-Wheeler</option>
-                                    <option value="">Bikes</option>
-                                    <option value="">Scooters</option>
-                                </select>
-                            </div> */}
-                            <div className="dropdown w-[293px]">
-                                <div className="flex items-center gap-[14px] p-5 border-b border-blue-300">
+                            <div className="dropdown w-[293px] ">
+                                <div className="flex items-center gap-[14px] p-5 " onClick={() => setDropdown(!dropdown)} >
                                     <img src={group} alt="" />
                                     <p className='text-lg text-white'>What’s New in Auto </p>
-                                    <img src={uparrow} alt="" />
+                                    {
+                                        dropdown ?
+                                            <img src={uparrow} alt="" /> : <IoIosArrowDown className='text-white text-xl' />
+                                    }
                                 </div>
                                 {/* <hr className='my-2 border-blue-300' /> */}
-                                <div className='flex justify-center '>
-                                    <ul className='grid gap-y-5 list-disc mt-5 text-white'>
+                                <div className={`flex justify-center border-t border-blue-300 ${dropdown ? 'block' : 'hidden'}`}>
+                                    <ul className='grid gap-y-5 list-disc text-white mt-5 cursor-pointer'>
                                         <li>4-Wheeler <img src={right_arrow} alt="" className='inline ml-[10px]' /></li>
                                         <li>Bikes<img src={right_arrow} alt="" className='inline ml-[10px]' /></li>
                                         <li>Scooters<img src={right_arrow} alt="" className='inline ml-[10px]' /></li>
                                     </ul>
                                 </div>
                             </div>
-                            <div className="flex items-center gap-[14px] p-5 mt-10">
+                            <div className="flex items-center gap-[14px] p-5">
                                 <img src={group} alt="" />
                                 <p className='text-lg text-white'>Auto Tech and Innovation</p>
                             </div>
@@ -134,7 +131,7 @@ function Menu_categories({ open, setopen }) {
                             </div>
                         </div>
                     </div>
-                    <div className="footer  mt-[80px]">
+                    <div className="footer mt-[80px]">
                         <div className="car_images flex justify-between items-center">
                             <img src={red_car} alt="" className='w-[53.33px] md:w-[130px] xl:w-[185.12px]' />
                             <img src={blue_car} alt="" className='w-[53.33px] md:w-[130px] xl:w-[185.12px]' />
