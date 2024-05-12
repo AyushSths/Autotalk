@@ -131,7 +131,7 @@ function Menu_categories({ open, setopen }) {
                             </div>
                         </div>
                     </div>
-                    <div className="footer mt-[80px]">
+                    <div className={`footer p-5 md:p-0  ${dropdown ? 'mt-[40px] md:mt-[70px]' : 'mt-[100px] md:mt-[200px]'}`}>
                         <div className="car_images flex justify-between items-center">
                             <img src={red_car} alt="" className='w-[53.33px] md:w-[130px] xl:w-[185.12px]' />
                             <img src={blue_car} alt="" className='w-[53.33px] md:w-[130px] xl:w-[185.12px]' />
