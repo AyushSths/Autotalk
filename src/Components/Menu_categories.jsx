@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from "react-router-dom"
 import auto from "../assets/auto 1.png"
 import search from "../assets/search (1).png"
 import bsearch from "../assets/search.png"
@@ -23,14 +24,14 @@ function Menu_categories({ open, setopen }) {
     const [dropdown, setDropdown] = useState(false)
 
     useEffect(() => {
-        AOS.init()
+
         const handleResize = () => {
             setIsSmallScreen(window.innerWidth < 1024);
         };
 
         window.addEventListener('resize', handleResize);
 
-        AOS.init();
+
         return () => {
             window.removeEventListener('resize', handleResize);
         };
@@ -75,9 +76,9 @@ function Menu_categories({ open, setopen }) {
                                 {/* <hr className='my-2 border-blue-300' /> */}
                                 <div className={`flex justify-center border-t border-blue-300 ${dropdown ? 'block' : 'hidden'}`}>
                                     <ul className='grid gap-y-5 list-disc text-white mt-5 cursor-pointer'>
-                                        <li>4-Wheeler <img src={right_arrow} alt="" className='inline ml-[10px]' /></li>
-                                        <li>Bikes<img src={right_arrow} alt="" className='inline ml-[10px]' /></li>
-                                        <li>Scooters<img src={right_arrow} alt="" className='inline ml-[10px]' /></li>
+                                        <li><a href="/Autotalk/4-Wheeler">4-Wheeler <img src={right_arrow} alt="" className='inline ml-[10px]' /></a> </li>
+                                        <li><a href="/Autotalk/Products">Bikes<img src={right_arrow} alt="" className='inline ml-[10px]' /></a></li>
+                                        <li><a href="/Autotalk/ProductDescription">Scooters<img src={right_arrow} alt="" className='inline ml-[10px]' /></a></li>
                                     </ul>
                                 </div>
                             </div>

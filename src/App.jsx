@@ -28,7 +28,6 @@ const App = () => {
           <Navbar setCondition={setCondition} setopen={setopen} open={open} isScrolled={isScrolled} setIsScrolled={setIsScrolled} />
           <Routes>
             <Route path="/Autotalk/" element={<Home isScrolled={isScrolled} />}></Route>
-            {/* <Route path="/Autotalk/Menu_categories" element={<Menu_categories />}></Route> */}
             <Route path="/Autotalk/Products" element={<Products />}></Route>
             <Route path="/Autotalk/ProductDescription" element={<ProductDescription />}></Route>
             <Route path="/Autotalk/Emipage" element={<Emipage />}></Route>
