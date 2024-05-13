@@ -70,7 +70,7 @@ const Herosection = ({ isScrolled }) => {
   };
 
   return (
-    <main className={`hero_section curve bg-sky-100 max-h-[750px] w-full p-4 ${isScrolled ? 'mt-[3em]' : 'mt-[3px] md:mt-0'}`} >
+    <main className={`hero_section curve bg-sky-100 min-h-[470px] md:h-[750px]  w-full p-4 ${isScrolled ? 'mt-[3em]' : 'mt-[3px] md:mt-0'}`} >
       <div className="sm:mt-20 py-4">
         <h2 className="animate-slideleft font-semibold md:text-[42px] px-4 text-xl  text-purple text-center mx-auto max-w-[1096px] tracking-wide leading-[145%]">
           Get Latest updates on what's going on AutoEcosystem in Nepal
@@ -81,7 +81,7 @@ const Herosection = ({ isScrolled }) => {
           daily basis. All resources published here are fact-checked and proof
           read so you can enjoy and get updates on what happening here at Nepal.
         </p>
-        <div className="max-w-[1320px] mx-auto mt-5">
+        <div className="max-w-[1320px] mx-auto mt-10">
           {/* <img src="./div.png" alt="herosection" className="mx-auto animate-slideleft" / */}
           {/* <img src={left_arrow} alt="" onClick={slideLeft} className="absolute cursor-pointer" /> */}
           <Slider {...settings}>
