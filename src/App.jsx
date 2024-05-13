@@ -21,8 +21,8 @@ const App = () => {
 
   return (
     <main >
-      <Menu_categories open={open} setopen={setopen} />
-      <div className={`routes ${open ? 'hidden' : 'block'}`}>
+      {/* <Menu_categories open={open} setopen={setopen} /> */}
+      <div className="routes">
         <Header />
         <BrowserRouter>
           <Navbar setCondition={setCondition} setopen={setopen} open={open} isScrolled={isScrolled} setIsScrolled={setIsScrolled} />

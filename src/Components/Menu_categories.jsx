@@ -76,9 +76,9 @@ function Menu_categories({ open, setopen }) {
                                 {/* <hr className='my-2 border-blue-300' /> */}
                                 <div className={`flex justify-center border-t border-blue-300 ${dropdown ? 'block' : 'hidden'}`}>
                                     <ul className='grid gap-y-5 list-disc text-white mt-5 cursor-pointer'>
-                                        <li><a href="/Autotalk/4-Wheeler">4-Wheeler <img src={right_arrow} alt="" className='inline ml-[10px]' /></a> </li>
-                                        <li><a href="/Autotalk/Products">Bikes<img src={right_arrow} alt="" className='inline ml-[10px]' /></a></li>
-                                        <li><a href="/Autotalk/ProductDescription">Scooters<img src={right_arrow} alt="" className='inline ml-[10px]' /></a></li>
+                                        <li><Link to="/Autotalk/4-Wheeler" onClick={() => setopen(!open)}>4-Wheeler <img src={right_arrow} alt="" className='inline ml-[10px]' /></Link> </li>
+                                        <li><Link to="/Autotalk/ProductDescription" onClick={() => setopen(!open)}>Bikes<img src={right_arrow} alt="" className='inline ml-[10px]' /></Link></li>
+                                        <li><Link to="/Autotalk/Products" onClick={() => setopen(!open)}>Scooters<img src={right_arrow} alt="" className='inline ml-[10px]' /></Link></li>
                                     </ul>
                                 </div>
                             </div>
